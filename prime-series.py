@@ -1,6 +1,10 @@
+from typing import List
+
+
 lower_value = int(input ("Please, Enter the Lowest Range Value: "))  
 upper_value = int(input ("Please, Enter the Upper Range Value: "))  
-  
+list=[]
+count=0
 print ("The Prime Numbers in the range are: ")  
 for number in range (lower_value, upper_value + 1):  
     if number > 1:  
@@ -8,4 +12,6 @@ for number in range (lower_value, upper_value + 1):
             if (number % i) == 0:  
                 break
         else:  
-            print (number)
+            list.append(number)
+            count+=1
+            
