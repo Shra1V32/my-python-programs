@@ -9,7 +9,7 @@ while (n):
         f=f*i
         i=i+1
     s=s+f
-    n=n//10
+    n//=10
 if s==temp:
     print("Number is a strong number")
 else:
