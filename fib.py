@@ -1,15 +1,13 @@
-terms = int(input("Enter a value: "))
-
+terms = int(input("Enter number of terms: "))
 n1,n2 = 0,1
 count = 0
-
 if terms <=0:
-    print("Please enter a positive integer,")
+    print("Please enter a positive integer")
 elif terms==1:
-    print("Fibonacci sequence upto",terms,":")
+    print(f"Fibonacci Sequence upto: {terms}: ")
     print(n1)
 else:
-    print("Fibonacci sequence:")
+    print("Fibonacci Sequence: ")
     while count<terms:
         print(n1)
         n3=n1+n2
